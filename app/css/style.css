@@ -1,3 +1,10 @@
+.clip {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/*
 * {
     margin: 0;
     padding: 0;
@@ -27,4 +34,4 @@ main {
     height: 440px;
     margin: 0 auto;
     background: url("../img/carousel_bg.png");
-}
+}*/
