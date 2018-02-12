@@ -1,29 +1,9 @@
-@media screen and (min-width: 430px) {
+@media screen and (min-width: 374px) {
     html {
-        font-size: 12px;
-    }
-
-    .main-header {
-        flex-direction: column;
-        height: 120px;
-        padding: 10px;
-    }
-
-    .main-header .currency,
-    .main-header .search-icon {
-        border: none;
-        height: auto;
-    }
-
-    .main-header .search-icon {
-        width: 28px;
-        height: 28px;
-        background: url("../img/main/logo.png") no-repeat 50% 50%;
+        font-size: 14px;
     }
 
     .logo {
-        width: 305px;
-        height: 80px;
         background: url("../img/main/logo.png") no-repeat 50% 50%;
     }
 }

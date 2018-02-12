@@ -84,13 +84,6 @@ html {
     align-items: center;
 }
 
-.main-header .account img {
-    width: 40px;
-    height: 38px;
-    margin-right: 15px;
-    margin-bottom: 10px;
-}
-
 .main-header .account a {
     display: flex;
     flex-direction: column;
@@ -169,6 +162,8 @@ html {
 
 .main-price-wrapper .main-price-items .main-price-items-count {
     margin-right: 40px;
+    max-width: 130px;
+    display: flex;
 }
 
 .main-price-wrapper .main-price-items .main-price-sum {
@@ -182,12 +177,13 @@ html {
 }
 
 .main-price-wrapper .main-price-items .main-price-items-count span,
+.main-price-wrapper .main-price-items .main-price-items-count p,
 .main-price-wrapper .main-price-items .main-price-sum span {
     font-size: 1.8rem;
 }
 
 .main-price-wrapper .main-price-items .main-price-sum span + span,
-.main-price-wrapper .main-price-items .main-price-items-count span + span {
+.main-price-wrapper .main-price-items .main-price-items-count p {
     margin-left: 10px;
 }
 
@@ -197,7 +193,6 @@ html {
     height: 25px;
     display: block;
     position: absolute;
-    top: 4px;
     left: -20px;
     background: #949393;
 }
@@ -210,6 +205,10 @@ html {
     font-size: 1.8rem;
     text-transform: uppercase;
     font-family: Arial, sans-serif;
+}
+
+.menu p {
+    max-width: 220px;
 }
 
 .menu button,
@@ -246,7 +245,7 @@ html {
 
 .user-mail input[type="email"],
 .user-mail input[type="email"]::placeholder {
-    font-size: 1.8rem;
+    font-size: 1.7rem;
     font-family: Arial, sans-serif;
 }
 
@@ -338,15 +337,21 @@ html {
 }
 
 .goods-hot ul {
+    height: 85px;
     margin-left: 15px;
     max-width: 500px;
+    display: flex;
+    align-items: center;
 }
 
 .goods-hot li {
-    height: 86px;
+    //height: 86px;
     text-transform: uppercase;
-    display: flex;
-    align-items: center;
+    max-width: 250px;
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .goods-hot li:not(:first-child) {
@@ -436,6 +441,8 @@ html {
     font-family: HelveticaRegular, Arial, sans-serif;
     text-transform: uppercase;
     cursor: pointer;
+    max-height: 60px;
+    overflow: hidden;
 }
 
 /*DISCOUNTS*/
@@ -448,6 +455,18 @@ html {
     justify-content: center;
     position: relative;
     margin-top: 25px;
+}
+
+.discounts-wrapper:before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: #ededed;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    z-index: 0;
 }
 
 .discounts-wrapper .discount,
@@ -466,30 +485,26 @@ html {
     background: #525252;
     background: url("../img/main/discounts_bg.png") 50% 50% no-repeat;
     position: relative;
+    z-index: 2;
 }
 
-.discount:before,
-.discount:after {
+.discounts-wrapper .discount:before,
+.discounts-wrapper .discount:after {
     content: "";
     display: block;
-    /*width: 30%;
-    height: 1px;
-    background: #ededed;
     position: absolute;
-    top: 50%;
-    z-index: -1;*/
-    position: absolute;
-    width: 15px;
-    height: 10px;
-    background: black;
+    width: 18px;
+    height: 20px;
+    background: #fff;
+    z-index: 1;
 }
 
 .discount:before {
-    left: 0;
+    left: -16px;
 }
 
 .discount:after {
-    right: 0;
+    right: -16px;
 }
 
 .discount .discount-count-info {
@@ -526,14 +541,13 @@ html {
     position: absolute;
     top: 55px;
     left: 50px;
+    font-size: 6.6rem;
+    max-width: 40px;
+    overflow: hidden;
 }
 
 .discount .discount-count-info p {
     font-size: 3rem;
-}
-
-.discount .discount-count-info .discount-count {
-    font-size: 6.6rem;
 }
 
 /*FOOTER*/
