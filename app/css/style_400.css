@@ -18,20 +18,12 @@
     .main-header .search-icon {
         width: 28px;
         height: 28px;
-        background: url("../img/main/search_icon_small.png");
+        background: url("../img/main/logo.png") no-repeat 50% 50%;
     }
 
     .logo {
         width: 305px;
         height: 80px;
-        background: url("../img/main/logo_small.png") no-repeat 50% 50%;
-    }
-
-    .discount .discount-count-info p {
-        font-size: 3rem;
-    }
-
-    .discount .discount-count-info .discount-count {
-        font-size: 6.6rem;
+        background: url("../img/main/logo.png") no-repeat 50% 50%;
     }
 }
