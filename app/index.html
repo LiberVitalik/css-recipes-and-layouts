@@ -4,25 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>css-recipes-and-layouts</title>
-    <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style_640.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style_640.css">
+    <link rel="stylesheet" href="css/style_400.css">
 </head>
 <body>
-    <!--<div class="wrap">
-        <div class="inform">
-            <div class="support">
-                <p>Custom care:</p>
-                <a href="tel: 888-23-4567">888-23-4567</a>
-            </div>
-        </div>
-    </div>
-    <main>
-        <div class="carousel"></div>
-    </main>-->
-
-    <!--320px-->
     <div class="support">
         <p class="clip">Custom care:</p>
         <a href="tel: 123-456-789" class="clip">123 456 789</a>
@@ -35,10 +24,155 @@
                 <option value="usd">RUB</option>
             </select>
         </div>
+        <div class="account">
+            <img src="img/main/user_foto.png" alt="user foto">
+            <a href="#">My account</a>
+        </div>
+        <div class="search-icon"></div>
     </header>
-    <form action="GET" class="user-form">
-
-    </form>
+    <aside class="logo-wrap">
+        <a href="#" class="logo"></a>
+    </aside>
+    <aside class="main-price-wrapper">
+        <img src="img/main/handbag.png" alt="">
+        <div class="main-price-items">
+            <div class="main-price-items-count">
+                <span>0</span>
+                <span>items</span>
+            </div>
+            <div class="main-price-sum">
+                <span>$</span>
+                <span>0</span>
+            </div>
+        </div>
+    </aside>
+    <nav class="menu">
+        <span>menu</span>
+        <button></button>
+    </nav>
+    <aside class="user-mail">
+        <form action="GET">
+            <input type="email" placeholder="Your email address">
+            <label for="submit-user-mail">
+                <input type="submit" id="submit-user-mail" value="">
+                <img src="img/main/plus.png" alt="add email">
+            </label>
+        </form>
+    </aside>
+    <aside class="social">
+        <p>Find us here</p>
+        <div class="social-icons">
+            <a href="#">
+                <i class="fa fa-facebook"></i>
+            </a>
+            <a href="#">
+                <i class="fa fa-twitter"></i>
+            </a>
+            <a href="#">
+                <i class="fa fa-pinterest"></i>
+            </a>
+        </div>
+    </aside>
+    <aside class="goods-wrapper hot-menu-bg">
+        <div class="goods-hot">
+            <ul>
+                <li>What's hot?</li>
+                <li>designers</li>
+                <li>featured</li>
+                <li>latest</li>
+            </ul>
+            <i class="fa fa-caret-down"></i>
+        </div>
+        <div class="goods-items-wrapper">
+            <div class="goods-items">
+                <figure class="goods-item">
+                    <a href="#">
+                        <img src="img/main/mimosa.png" alt="mimosa dress">
+                    </a>
+                    <div class="goods-item-inform">
+                        <p class="goods-item-name">MIMOSA LACE DRESS</p>
+                        <p class="goods-item-price">$76.95</p>
+                        <button class="goods-item-add-cart">
+                            <span>add to cart</span>
+                            <i class="fa fa-plus"></i>
+                        </button>
+                    </div>
+                </figure>
+            </div>
+            <div class="goods-items">
+                <figure class="goods-item">
+                    <a href="#">
+                        <img src="img/main/wishvitalise.png" alt="mimosa dress">
+                    </a>
+                    <div class="goods-item-inform">
+                        <p class="goods-item-name">WishVitalise Dress</p>
+                        <p class="goods-item-price">$96.55</p>
+                        <button class="hot-price-goods-add-cart">
+                            <span>add to cart</span>
+                            <i class="fa fa-plus"></i>
+                        </button>
+                    </div>
+                </figure>
+            </div>
+        </div>
+        <button class="lead-more">load more</button>
+    </aside>
+    <aside class="discounts-wrapper">
+        <div class="discount">
+            <div class="discount-count-info">
+                <p class="discount-clearance">clearance</p>
+                <span class="discount-count">50</span>
+                <p class="discount-percent-text">
+                    <span>%</span>
+                    <span>off</span>
+                </p>
+            </div>
+        </div>
+    </aside>
+    <aside class="goods-wrapper">
+        <div class="goods-items-wrapper">
+            <div class="goods-items">
+                <figure class="goods-item">
+                    <a href="#">
+                        <img src="img/main/atmos.png" alt="Atmos & Here Shopper">
+                    </a>
+                    <div class="goods-item-inform">
+                        <p class="goods-item-name">Atmos & Here Shopper</p>
+                        <p class="goods-item-price">$49.95</p>
+                        <button class="goods-item-add-cart">
+                            <span>add to cart</span>
+                            <i class="fa fa-plus"></i>
+                        </button>
+                    </div>
+                </figure>
+            </div>
+            <div class="goods-items">
+                <figure class="goods-item">
+                    <a href="#">
+                        <img src="img/main/wishvitalise_bag.png" alt="wishvitalise bag">
+                    </a>
+                    <div class="goods-item-inform">
+                        <p class="goods-item-name">WishVitalise Dress</p>
+                        <p class="goods-item-price">$96.55</p>
+                        <button class="hot-price-goods-add-cart">
+                            <span>add to cart</span>
+                            <i class="fa fa-plus"></i>
+                        </button>
+                    </div>
+                </figure>
+            </div>
+        </div>
+        <button class="lead-more">load more</button>
+    </aside>
+    <footer class="main-footer">
+        <nav class="footer-menu">
+            <button></button>
+        </nav>
+        <small>
+            <span>&#169 LookShop.com</span>
+            <span>All rights reserved</span>
+        </small>
+    </footer>
 </body>
 </html>
 

@@ -1,37 +1,542 @@
+html {
+    font-size: 12px;
+}
+
+/*---Support block---*/
+
+.support {
+    height: 135px;
+    font-size: 1.8rem;
+    font-family: Arial, sans-serif;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background: #fafafa;
+}
+
+.support p,
+.support a {
+    max-width: 250px;
+    color: #838383;
+}
+
+.support p {
+    max-width: 250px;
+    margin-right: 10px;
+}
+
+.support a {
+    text-decoration: none;
+}
+
+.support a:hover {
+    text-decoration: underline;
+}
+
+/*---Main header---*/
+
+.main-header {
+    height: 96px;
+    background: #000;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.main-header .currency {
+    width: 25%;
+    position: relative;
+    display: block;
+    justify-content: center;
+    border-right: 2px solid #444444;
+}
+
+.main-header .currency select {
+    max-width: 140px;
+    background: transparent;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 1.8rem;
+    -webkit-appearance: none;
+    padding-right: 30px;
+    background: url("../img/main/select_rectangle.png") no-repeat 90% 50%;
+}
+
+.main-header .currency select option {
+    background: #000;
+}
+
+.main-header .account {
+    max-width: 60%;
+    display: flex;
+    align-items: center;
+}
+
+.main-header .account img {
+    width: 40px;
+    height: 38px;
+    margin-right: 15px;
+}
+
+.main-header .account a {
+    font-family: Arial, sans-serif;
+    font-size: 1.8rem;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.main-header .search-icon {
+    width: 15%;
+    height: 38px;
+    cursor: pointer;
+    border-left: 2px solid #444444;
+    background: url("../img/main/search_icon.png") no-repeat 50% 50%;
+}
+
+.main-header .currency,
+.main-header .search-icon {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+/*---Logo---*/
+
+.logo-wrap {
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    display: block;
+    width: 400px;
+    height: 100px;
+    background: url("../img/main/logo.png") no-repeat 50% 50%;
+}
+
+/*---main price---*/
+
+.main-price-wrapper,
+.menu,
+.user-mail,
+.social,
+.hot-price {
+    width: 95%;
+    height: 90px;
+    margin: 0 auto 28px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fafafa;
+    box-sizing: border-box;
+    padding: 30px;
+}
+
+.main-price-wrapper {
+    border: 1px solid #d6d6d6 ;
+}
+
+.main-price-wrapper .main-price-items {
+    display: flex;
+    font-family: Arial, sans-serif;
+    font-size: 1.8rem;
+    color: #949393;
+    text-transform: uppercase;
+}
+
+.main-price-wrapper .main-price-items .main-price-items-count {
+    margin-right: 40px;
+}
+
+.main-price-wrapper .main-price-items .main-price-sum {
+    font-size: 0;
+    position: relative;
+}
+
+.main-price-wrapper .main-price-items .main-price-items-count,
+.main-price-wrapper .main-price-items .main-price-sum {
+    font-size: 0;
+}
+
+.main-price-wrapper .main-price-items .main-price-items-count span,
+.main-price-wrapper .main-price-items .main-price-sum span {
+    font-size: 1.8rem;
+}
+
+.main-price-wrapper .main-price-items .main-price-sum span + span,
+.main-price-wrapper .main-price-items .main-price-items-count span + span {
+    margin-left: 10px;
+}
+
+.main-price-wrapper .main-price-items .main-price-sum:before {
+    content: "";
+    width: 2px;
+    height: 25px;
+    display: block;
+    position: absolute;
+    top: 4px;
+    left: -20px;
+    background: #949393;
+}
+
+/*---MENU---*/
+
+.menu {
+    background: #fd926d;
+    color: #fff;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-family: Arial, sans-serif;
+}
+
+.menu button,
+.footer-menu button {
+    width: 35px;
+    height: 35px;
+    border: none;
+    cursor: pointer;
+    background: url("../img/main/bars.png") no-repeat 50% 50%;
+}
+
+.user-mail,
+.user-mail form {
+    background: #ededed;
+}
+
+.user-mail form {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background: #ededed;
+}
+
+.user-mail input {
+    border: none;
+}
+
+.user-mail label[for="submit-user-mail"] {
+    background: #fd926d;
+    width: 20%;
+    margin-right: -30px;
+    font-size: 2.2rem;
+}
+
+.user-mail input[type="email"],
+.user-mail input[type="email"]::placeholder {
+    font-size: 1.8rem;
+    font-family: Arial, sans-serif;
+}
+
+.user-mail input[type="email"] {
+    width: 80%;
+    height: 90px;
+    background: #ededed;
+    box-sizing: border-box;
+    padding: 0 10px;
+    margin-left: -10px;
+}
+
+.user-mail input[type="email"]::placeholder {
+    font-style: italic;
+    color: #9f9f9f;
+}
+
+.user-mail label {
+    background: #fd926d;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*---SOCIAL---*/
+
+.social {
+    background: #fff;
+    justify-content: center;
+}
+
+.social p {
+    font-family: Arial, sans-serif;
+    font-size: 1.6rem;
+    color: #6c6c6c;
+    margin-right: 35px;
+}
+
+.social-icons {
+    display: flex;
+}
+
+.social-icons a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90px;
+    height: 90px;
+    text-decoration: none;
+    background: #f7f7f7;
+}
+
+.social-icons a:hover {
+    background: #ededed;
+}
+
+.social-icons a:nth-of-type(2) {
+    background: #ededed;
+}
+
+.social-icons a i {
+    font-size: 1.8rem;
+    color: #6b6b6b;
+}
+
+/*GOODS-HOT*/
+
+.goods-hot {
+    width: 100%;
+    margin: 0;
+    background: #f4845d;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    font-size: 1.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.goods-wrapper {
+    box-sizing: border-box;
+    border-bottom: 1px solid transparent;
+}
+
+.hot-menu-bg {
+    background: #fd926d;
+}
+
+.goods-hot ul {
+    margin-left: 15px;
+    max-width: 500px;
+}
+
+.goods-hot li {
+    height: 86px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+}
+
+.goods-hot li:not(:first-child) {
+    display: none;
+}
+
+.goods-hot i {
+    cursor: pointer;
+    margin-right: 30px;
+}
+
+.goods-items-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.goods-items {
+    width: 280px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    border-top: 1px solid transparent;
+}
+
+.goods-item {
+    width: 275px;
+    height: 542px;
+    margin: 30px 15px 0 0;
+    background: #fff;
+    position: relative;
+}
+
+.goods-item-inform {
+    width: 275px;
+    height: 164px;
+    background: #f7f7f7;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.goods-item-inform p,
+.goods-item-inform button {
+    text-transform: uppercase;
+}
+
+.goods-item-inform p {
+    color: #373737;
+    font-family: Arial, sans-serif;
+}
+
+.goods-item-name {
+    font-size: 1.1rem;
+    margin: 12px 0 15px;
+}
+
+.goods-item-price {
+    font-size: 1.7rem;
+    margin-bottom: 15px;
+}
+
+.goods-item-inform button {
+    width: 220px;
+    height: 56px;
+    background: #fd926d;
+    font-size: 1.2rem;
+    border: none;
+    border-bottom: 7px solid #dd6b44;
+    color: #fff;
+    cursor: pointer;
+    font-family: HelveticaRegular, sans-serif;
+}
+
+.goods-item-inform button i {
+    margin-left: 20px;
+}
+
+.goods-wrapper .lead-more {
+    display: block;
+    margin: 30px auto;
+    padding: 20px 50px;
+    background: #000;
+    color: #fff;
+    border: none;
+    font-family: HelveticaRegular, Arial, sans-serif;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+/*DISCOUNTS*/
+
+.discounts-wrapper {
+    width: 100%;
+    height: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-top: 25px;
+}
+
+.discounts-wrapper .discount,
+.discounts-wrapper .discount .discount-count-info {
+    width: 160px;
+    height: 160px;
+}
+
+.discounts-wrapper .discount {
+    font-family: EmpirialRegular, Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    border-radius: 50%;
+    background: #525252;
+    background: url("../img/main/discounts_bg.png") 50% 50% no-repeat;
+}
+
+.discount:before,
+.discount:after {
+    content: "";
+    display: block;
+    width: 35%;
+    height: 1px;
+    background: #ededed;
+    position: absolute;
+    top: 50%;
+}
+
+.discount:before {
+    left: 0;
+}
+
+.discount:after {
+    right: 0;
+}
+
+.discount .discount-count-info {
+    position: relative;
+}
+
+.discount .discount-count-info p,
+.discount .discount-count-info .discount-count {
+    position: absolute;
+}
+
+.discount .discount-count-info p {
+    font-size: 2.25rem;
+    text-transform: uppercase;
+}
+
+.discounts-wrapper .discount .discount-count-info .discount-clearance {
+    top: 29px;
+    left: 45px;
+}
+
+.discounts-wrapper .discount .discount-count-info .discount-percent-text {
+    top: 65px;
+    left: 92px;
+}
+
+.discount-count-info .discount-percent-text > span + span {
+    position: absolute;
+    top: 30px;
+    left: 0;
+}
+
+.discount .discount-count-info .discount-count {
+    font-size: 5rem;
+    position: absolute;
+    top: 55px;
+    left: 50px;
+}
+
+.discount .discount-count-info .discount-count {
+
+}
+
+/*FOOTER*/
+
+.main-footer {
+    height: 105px;
+    background: #000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+}
+
+.main-footer small {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+    color: #8d8d8d;
+    font-family: Arial, sans-serif;
+}
+
+.main-footer small span + span {
+    text-transform: capitalize;
+}
+
+
 .clip {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
 }
-
-/*
-* {
-    margin: 0;
-    padding: 0;
-}
-
-.wrap {
-    width: 1200px;
-    margin: 0 auto;
-}
-
-.inform {
-    background: black;
-    height: 30px;
-}
-
-.inform .support {
-    display: flex;
-}
-
-.inform .support p,
-.inform .support a {
-    color: white;
-}
-
-main {
-    width: 100%;
-    height: 440px;
-    margin: 0 auto;
-    background: url("../img/carousel_bg.png");
-}*/

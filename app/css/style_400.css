@@ -1,0 +1,37 @@
+@media screen and (min-width: 430px) {
+    html {
+        font-size: 12px;
+    }
+
+    .main-header {
+        flex-direction: column;
+        height: 120px;
+        padding: 10px;
+    }
+
+    .main-header .currency,
+    .main-header .search-icon {
+        border: none;
+        height: auto;
+    }
+
+    .main-header .search-icon {
+        width: 28px;
+        height: 28px;
+        background: url("../img/main/search_icon_small.png");
+    }
+
+    .logo {
+        width: 305px;
+        height: 80px;
+        background: url("../img/main/logo_small.png") no-repeat 50% 50%;
+    }
+
+    .discount .discount-count-info p {
+        font-size: 3rem;
+    }
+
+    .discount .discount-count-info .discount-count {
+        font-size: 6.6rem;
+    }
+}

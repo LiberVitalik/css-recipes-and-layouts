@@ -1,0 +1,13 @@
+@font-face {
+font-family: "HelveticaRegular";
+src: url("../fonts/HelveticaNeueLTStd_Lt.otf") format("opentype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "EmpirialRegular";
+    src: url("../fonts/Empirial.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
