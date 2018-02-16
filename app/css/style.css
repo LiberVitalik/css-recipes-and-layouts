@@ -64,7 +64,6 @@ html {
 
 .main-header .currency select {
     max-width: 90px;
-    //background: transparent;
     color: #fff;
     border: none;
     cursor: pointer;
@@ -95,7 +94,7 @@ html {
     text-transform: uppercase;
 }
 
-.main-header .account a span {
+.main-header .account a p {
     display: none;
 }
 
@@ -366,25 +365,18 @@ html {
 .goods-items-wrapper {
     display: flex;
     flex-wrap: wrap;
-}
-
-.goods-items {
-    width: 280px;
-    margin: 0 auto;
-    box-sizing: border-box;
-    border-top: 1px solid transparent;
+    justify-content: space-evenly;
 }
 
 .goods-item {
-    width: 275px;
+    width: 260px;
     height: 542px;
     margin: 30px 15px 0 0;
-    background: #fff;
     position: relative;
 }
 
 .goods-item-inform {
-    width: 275px;
+    width: 274px;
     height: 164px;
     background: #f7f7f7;
     position: absolute;
@@ -541,13 +533,13 @@ html {
     position: absolute;
     top: 55px;
     left: 50px;
-    font-size: 6.6rem;
+    font-size: 80px;
     max-width: 40px;
     overflow: hidden;
 }
 
 .discount .discount-count-info p {
-    font-size: 3rem;
+    font-size: 36px;
 }
 
 /*FOOTER*/

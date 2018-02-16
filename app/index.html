@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>css-recipes-and-layouts</title>
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/style_640.css">
-    <link rel="stylesheet" href="css/style_400.css">
+    <link rel="stylesheet" href="css/mobile.css">
 </head>
 <body>
     <header class="main-header">
@@ -28,7 +28,7 @@
             <div class="account">
                 <a href="#">
                     <img src="img/main/user_foto.png" alt="user foto">
-                    <span>My account</span>
+                    <p class="clip">My account</p>
                 </a>
             </div>
             <div class="search-icon"></div>
@@ -135,36 +135,32 @@
     </aside>
     <aside class="goods-wrapper">
         <div class="goods-items-wrapper">
-            <div class="goods-items">
-                <figure class="goods-item">
-                    <a href="#">
-                        <img src="img/main/atmos.png" alt="Atmos & Here Shopper">
-                    </a>
-                    <div class="goods-item-inform">
-                        <p class="goods-item-name">Atmos & Here Shopper</p>
-                        <p class="goods-item-price">$49.95</p>
-                        <button class="goods-item-add-cart">
-                            <span>add to cart</span>
-                            <i class="fa fa-plus"></i>
-                        </button>
-                    </div>
-                </figure>
-            </div>
-            <div class="goods-items">
-                <figure class="goods-item">
-                    <a href="#">
-                        <img src="img/main/wishvitalise_bag.png" alt="wishvitalise bag">
-                    </a>
-                    <div class="goods-item-inform">
-                        <p class="goods-item-name">WishVitalise Dress</p>
-                        <p class="goods-item-price">$96.55</p>
-                        <button class="hot-price-goods-add-cart">
-                            <span>add to cart</span>
-                            <i class="fa fa-plus"></i>
-                        </button>
-                    </div>
-                </figure>
-            </div>
+            <figure class="goods-item">
+                <a href="#">
+                    <img src="img/main/atmos.png" alt="Atmos & Here Shopper">
+                </a>
+                <div class="goods-item-inform">
+                    <p class="goods-item-name">Atmos & Here Shopper</p>
+                    <p class="goods-item-price">$49.95</p>
+                    <button class="goods-item-add-cart">
+                        <span>add to cart</span>
+                        <i class="fa fa-plus"></i>
+                    </button>
+                </div>
+            </figure>
+            <figure class="goods-item">
+                <a href="#">
+                    <img src="img/main/wishvitalise_bag.png" alt="wishvitalise bag">
+                </a>
+                <div class="goods-item-inform">
+                    <p class="goods-item-name">WishVitalise Dress</p>
+                    <p class="goods-item-price">$96.55</p>
+                    <button class="hot-price-goods-add-cart">
+                        <span>add to cart</span>
+                        <i class="fa fa-plus"></i>
+                    </button>
+                </div>
+            </figure>
         </div>
         <button class="lead-more">load more</button>
     </aside>
