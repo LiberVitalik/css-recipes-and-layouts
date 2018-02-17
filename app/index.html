@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/style_640.css">
     <link rel="stylesheet" href="css/mobile.css">
+    <link rel="stylesheet" href="css/tablet.css">
 </head>
 <body>
     <header class="main-header">
@@ -28,53 +28,106 @@
             <div class="account">
                 <a href="#">
                     <img src="img/main/user_foto.png" alt="user foto">
+                    <img src="img/tablet/user_foto_tablet.png" alt="user foto">
                     <p class="clip">My account</p>
                 </a>
             </div>
             <div class="search-icon"></div>
         </section>
     </header>
-    <aside class="logo-wrap">
-        <a href="#" class="logo"></a>
-    </aside>
-    <aside class="main-price-wrapper">
-        <img src="img/main/handbag.png" alt="">
-        <div class="main-price-items">
-            <div class="main-price-items-count">
-                <span>0</span>
-                <p class="clip">items</p>
-            </div>
-            <div class="main-price-sum">
-                <span>$</span>
-                <span>0</span>
-            </div>
+    <aside class="tablet-menu-wrap">
+        <aside class="logo-wrap">
+            <a href="#" class="logo"></a>
+        </aside>
+        <div class="tablet-menu-container">
+            <select name="card" id="your-card">
+                <option value="your-cart">Your cart</option>
+            </select>
+            <aside class="main-price-wrapper">
+                <div class="handbag"></div>
+                <div class="main-price-items">
+                    <div class="main-price-items-count">
+                        <span>0</span>
+                        <p class="clip">items</p>
+                    </div>
+                    <div class="main-price-sum">
+                        <span>$</span>
+                        <span>0</span>
+                    </div>
+                </div>
+            </aside>
         </div>
     </aside>
     <nav class="menu">
         <p class="clip">menu</p>
         <button></button>
     </nav>
-    <aside class="user-mail">
-        <form action="GET">
-            <input type="email" placeholder="Your email address">
-            <label for="submit-user-mail">
-                <input type="submit" id="submit-user-mail" value="">
-                <img src="img/main/plus.png" alt="add email">
-            </label>
-        </form>
+    <aside class="slider-wrapper">
+        <div class="slider">
+            <button class="previous-slide">
+                <i class="fa fa-chevron-left"></i>
+            </button>
+            <div class="left-column">
+                <img src="img/tablet/slider-logo-left.png" alt="crazy summer">
+                <button>
+                    <span>show now</span>
+                    <i class="fa fa-caret-right"></i>
+                </button>
+            </div>
+            <div class="right-column"></div>
+            <button class="next-slide">
+                <i class="fa fa-chevron-right"></i>
+            </button>
+        </div>
+        <ul class="slider-buttons">
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+        </ul>
     </aside>
-    <aside class="social">
-        <p>Find us here</p>
-        <div class="social-icons">
+    <div class="communications-wrapper">
+        <aside class="user-mail">
+            <p class="clip">Stay updated</p>
+            <form action="GET">
+                <input type="email" placeholder="Your email address">
+                <label for="submit-user-mail">
+                    <input type="submit" id="submit-user-mail" value="">
+                </label>
+            </form>
+        </aside>
+        <aside class="social">
+            <p class="clip">Find us here</p>
+            <div class="social-icons">
+                <a href="#">
+                    <i class="fa fa-facebook"></i>
+                </a>
+                <a href="#">
+                    <i class="fa fa-twitter"></i>
+                </a>
+                <a href="#">
+                    <i class="fa fa-pinterest"></i>
+                </a>
+            </div>
+        </aside>
+    </div>
+    <aside class="advertising">
+        <a href="#">
+            <img src="img/tablet/news1.png" alt="news1">
+        </a>
+        <div>
             <a href="#">
-                <i class="fa fa-facebook"></i>
+                <img src="img/tablet/news2.png" alt="news2">
             </a>
-            <a href="#">
-                <i class="fa fa-twitter"></i>
-            </a>
-            <a href="#">
-                <i class="fa fa-pinterest"></i>
-            </a>
+            <div>
+                <a href="#">
+                    <img src="img/tablet/news3.png" alt="news3">
+                </a>
+                <a href="#">
+                    <img src="img/tablet/news4.png" alt="news4">
+                </a>
+            </div>
         </div>
     </aside>
     <aside class="goods-wrapper hot-menu-bg">
@@ -85,38 +138,91 @@
                 <li>featured</li>
                 <li>latest</li>
             </ul>
+            <div class="goods-hot-control">
+                <button></button>
+                <button></button>
+            </div>
             <i class="fa fa-caret-down"></i>
         </div>
         <div class="goods-items-wrapper">
-            <div class="goods-items">
-                <figure class="goods-item">
-                    <a href="#">
-                        <img src="img/main/mimosa.png" alt="mimosa dress">
-                    </a>
-                    <div class="goods-item-inform">
-                        <p class="goods-item-name">MIMOSA LACE DRESS</p>
-                        <p class="goods-item-price">$76.95</p>
-                        <button class="goods-item-add-cart">
-                            <span>add to cart</span>
-                            <i class="fa fa-plus"></i>
-                        </button>
-                    </div>
-                </figure>
+            <div class="goods-items-mobile">
+                <div class="goods-items">
+                    <figure class="goods-item">
+                        <a href="#">
+                            <img src="img/main/mimosa.png" alt="mimosa dress">
+                        </a>
+                        <div class="goods-item-inform">
+                            <p class="goods-item-name">MIMOSA LACE DRESS</p>
+                            <p class="goods-item-price">$76.95</p>
+                            <button class="goods-item-add-cart">
+                                <span>add to cart</span>
+                                <i class="fa fa-plus"></i>
+                            </button>
+                        </div>
+                    </figure>
+                </div>
+                <div class="goods-items">
+                    <figure class="goods-item">
+                        <a href="#">
+                            <img src="img/main/wishvitalise.png" alt="mimosa dress">
+                        </a>
+                        <div class="goods-item-inform">
+                            <p class="goods-item-name">WishVitalise Dress</p>
+                            <p class="goods-item-price">$96.55</p>
+                            <button class="hot-price-goods-add-cart">
+                                <span>add to cart</span>
+                                <i class="fa fa-plus"></i>
+                            </button>
+                        </div>
+                    </figure>
+                </div>
             </div>
-            <div class="goods-items">
-                <figure class="goods-item">
-                    <a href="#">
-                        <img src="img/main/wishvitalise.png" alt="mimosa dress">
-                    </a>
-                    <div class="goods-item-inform">
-                        <p class="goods-item-name">WishVitalise Dress</p>
-                        <p class="goods-item-price">$96.55</p>
-                        <button class="hot-price-goods-add-cart">
-                            <span>add to cart</span>
-                            <i class="fa fa-plus"></i>
-                        </button>
-                    </div>
-                </figure>
+            <div class="goods-items-tablet">
+                <div class="goods-items">
+                    <figure class="goods-item">
+                        <a href="#">
+                            <img src="img/tablet/goods-hot-dress1.png" alt="mimosa dress">
+                        </a>
+                        <div class="goods-item-inform">
+                            <p class="goods-item-name">MIMOSA LACE DRESS</p>
+                            <p class="goods-item-price">$76.95</p>
+                            <button class="goods-item-add-cart">
+                                <span>add to cart</span>
+                                <i class="fa fa-plus"></i>
+                            </button>
+                        </div>
+                    </figure>
+                </div>
+                <div class="goods-items">
+                    <figure class="goods-item">
+                        <a href="#">
+                            <img src="img/tablet/goods-hot-dress2.png" alt="mimosa dress">
+                        </a>
+                        <div class="goods-item-inform">
+                            <p class="goods-item-name">FEEL TANK</p>
+                            <p class="goods-item-price">$59.95</p>
+                            <button class="hot-price-goods-add-cart">
+                                <span>add to cart</span>
+                                <i class="fa fa-plus"></i>
+                            </button>
+                        </div>
+                    </figure>
+                </div>
+                <div class="goods-items goods-items-active">
+                    <figure class="goods-item">
+                        <a href="#">
+                            <img src="img/tablet/goods-hot-dress4.png" alt="mimosa dress">
+                        </a>
+                        <div class="goods-item-inform">
+                            <p class="goods-item-name">HOT SHORTS</p>
+                            <p class="goods-item-price">$35.95</p>
+                            <button class="hot-price-goods-add-cart">
+                                <span>add to cart</span>
+                                <i class="fa fa-plus"></i>
+                            </button>
+                        </div>
+                    </figure>
+                </div>
             </div>
         </div>
         <button class="lead-more">load more</button>
