@@ -13,30 +13,56 @@
 </head>
 <body>
     <header class="main-header">
-        <section class="support">
-            <p class="clip">Custom care:</p>
-            <a href="tel: 123-456-789" class="clip">123 456 789</a>
-        </section>
-        <section class="currency-wrapper">
-            <div class="currency">
-                <select name="currency">
-                    <option value="usd">$ US</option>
-                    <option value="usd">BLR</option>
-                    <option value="usd">RUB</option>
-                </select>
-            </div>
-            <div class="account">
-                <a href="#">
-                    <img src="img/main/user_foto.png" alt="user foto">
-                    <img src="img/tablet/user_foto_tablet.png" alt="user foto">
-                    <p class="clip">My account</p>
-                </a>
-            </div>
-            <div class="search-icon"></div>
-        </section>
+        <div class="flex-wrap">
+            <section class="support">
+                <p class="clip">Custom care:</p>
+                <a href="tel: 123-456-789" class="clip">123 456 789</a>
+            </section>
+            <section class="currency-wrapper">
+                <div class="currency">
+                    <select name="currency">
+                        <option value="usd">$ US</option>
+                        <option value="usd">BLR</option>
+                        <option value="usd">RUB</option>
+                    </select>
+                </div>
+                <div class="account">
+                    <a href="#">
+                        <img src="img/main/user_foto.png" alt="user foto">
+                        <img src="img/tablet/user_foto_tablet.png" alt="user foto">
+                        <p class="clip">My account</p>
+                    </a>
+                </div>
+                <div class="search-icon"></div>
+            </section>
+        </div>
     </header>
-    <aside class="tablet-menu-wrap">
-        <aside class="logo-wrap">
+    <aside class="logo-container">
+        <div class="flex-wrap">
+            <aside class="logo-wrap">
+                <a href="#" class="logo"></a>
+            </aside>
+            <div class="tablet-menu-container">
+                <select name="card" id="your-card">
+                    <option value="your-cart">Your cart</option>
+                </select>
+                <aside class="main-price-wrapper">
+                    <div class="handbag"></div>
+                    <div class="main-price-items">
+                        <div class="main-price-items-count">
+                            <span>0</span>
+                            <p class="clip">items</p>
+                        </div>
+                        <div class="main-price-sum">
+                            <span>$</span>
+                            <span>0</span>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </div>
+
+        <!--<aside class="logo-wrap">
             <a href="#" class="logo"></a>
         </aside>
         <div class="tablet-menu-container">
@@ -56,7 +82,8 @@
                     </div>
                 </div>
             </aside>
-        </div>
+        </div>-->
+
     </aside>
     <nav class="menu">
         <p class="clip">menu</p>
@@ -70,7 +97,7 @@
             <div class="left-column">
                 <img src="img/tablet/slider-logo-left.png" alt="crazy summer">
                 <button>
-                    <span>show now</span>
+                    <p class="clip">show now</p>
                     <i class="fa fa-caret-right"></i>
                 </button>
             </div>
@@ -144,85 +171,95 @@
             </div>
             <i class="fa fa-caret-down"></i>
         </div>
-        <div class="goods-items-wrapper">
-            <div class="goods-items-mobile">
-                <div class="goods-items">
-                    <figure class="goods-item">
-                        <a href="#">
-                            <img src="img/main/mimosa.png" alt="mimosa dress">
-                        </a>
-                        <div class="goods-item-inform">
-                            <p class="goods-item-name">MIMOSA LACE DRESS</p>
-                            <p class="goods-item-price">$76.95</p>
-                            <button class="goods-item-add-cart">
-                                <span>add to cart</span>
-                                <i class="fa fa-plus"></i>
-                            </button>
-                        </div>
-                    </figure>
-                </div>
-                <div class="goods-items">
-                    <figure class="goods-item">
-                        <a href="#">
-                            <img src="img/main/wishvitalise.png" alt="mimosa dress">
-                        </a>
-                        <div class="goods-item-inform">
-                            <p class="goods-item-name">WishVitalise Dress</p>
-                            <p class="goods-item-price">$96.55</p>
-                            <button class="hot-price-goods-add-cart">
-                                <span>add to cart</span>
-                                <i class="fa fa-plus"></i>
-                            </button>
-                        </div>
-                    </figure>
-                </div>
+        <div class="goods-items-mobile">
+            <div class="goods-items">
+                <figure class="goods-item">
+                    <a href="#">
+                        <img src="img/main/mimosa.png" alt="mimosa dress">
+                    </a>
+                    <div class="goods-item-inform">
+                        <p class="goods-item-name">MIMOSA LACE DRESS</p>
+                        <p class="goods-item-price">$76.95</p>
+                        <button class="goods-item-add-cart">
+                            <span>add to cart</span>
+                            <i class="fa fa-plus"></i>
+                        </button>
+                    </div>
+                </figure>
             </div>
-            <div class="goods-items-tablet">
-                <div class="goods-items">
-                    <figure class="goods-item">
-                        <a href="#">
-                            <img src="img/tablet/goods-hot-dress1.png" alt="mimosa dress">
-                        </a>
-                        <div class="goods-item-inform">
-                            <p class="goods-item-name">MIMOSA LACE DRESS</p>
-                            <p class="goods-item-price">$76.95</p>
-                            <button class="goods-item-add-cart">
-                                <span>add to cart</span>
-                                <i class="fa fa-plus"></i>
-                            </button>
-                        </div>
-                    </figure>
-                </div>
-                <div class="goods-items">
-                    <figure class="goods-item">
-                        <a href="#">
-                            <img src="img/tablet/goods-hot-dress2.png" alt="mimosa dress">
-                        </a>
-                        <div class="goods-item-inform">
-                            <p class="goods-item-name">FEEL TANK</p>
-                            <p class="goods-item-price">$59.95</p>
-                            <button class="hot-price-goods-add-cart">
-                                <span>add to cart</span>
-                                <i class="fa fa-plus"></i>
-                            </button>
-                        </div>
-                    </figure>
-                </div>
-                <div class="goods-items goods-items-active">
-                    <figure class="goods-item">
-                        <a href="#">
-                            <img src="img/tablet/goods-hot-dress4.png" alt="mimosa dress">
-                        </a>
-                        <div class="goods-item-inform">
-                            <p class="goods-item-name">HOT SHORTS</p>
-                            <p class="goods-item-price">$35.95</p>
-                            <button class="hot-price-goods-add-cart">
-                                <span>add to cart</span>
-                                <i class="fa fa-plus"></i>
-                            </button>
-                        </div>
-                    </figure>
-                </div>
+            <div class="goods-items">
+                <figure class="goods-item">
+                    <a href="#">
+                        <img src="img/main/wishvitalise.png" alt="mimosa dress">
+                    </a>
+                    <div class="goods-item-inform">
+                        <p class="goods-item-name">WishVitalise Dress</p>
+                        <p class="goods-item-price">$96.55</p>
+                        <button class="hot-price-goods-add-cart">
+                            <span>add to cart</span>
+                            <i class="fa fa-plus"></i>
+                        </button>
+                    </div>
+                </figure>
+            </div>
+        </div>
+        <div class="goods-items-tablet">
+            <div class="goods-items">
+                <figure class="goods-item">
+                    <a href="#">
+                        <img src="img/tablet/goods-hot-dress1.png" alt="mimosa dress">
+                    </a>
+                    <div class="goods-item-inform">
+                        <p class="goods-item-name">MIMOSA LACE DRESS</p>
+                        <p class="goods-item-price">$76.95</p>
+                        <button class="goods-item-add-cart">
+                            <span>add to cart</span>
+                            <i class="fa fa-plus"></i>
+                        </button>
+                    </div>
+                    <a class="shop-it">
+                        <img src="img/tablet/shop-icon.png" alt="shop it">
+                        <span>Shop it</span>
+                    </a>
+                </figure>
+            </div>
+            <div class="goods-items">
+                <figure class="goods-item sale">
+                    <a href="#">
+                        <img src="img/tablet/goods-hot-dress2.png" alt="mimosa dress">
+                    </a>
+                    <div class="goods-item-inform">
+                        <p class="goods-item-name">FEEL TANK</p>
+                        <p class="goods-item-price">$59.95</p>
+                        <button class="hot-price-goods-add-cart">
+                            <span>add to cart</span>
+                            <i class="fa fa-plus"></i>
+                        </button>
+                    </div>
+                    <a class="shop-it">
+                        <img src="img/tablet/shop-icon.png" alt="shop it">
+                        <span>Shop it</span>
+                    </a>
+                </figure>
+            </div>
+            <div class="goods-items goods-items-active">
+                <figure class="goods-item">
+                    <a href="#">
+                        <img src="img/tablet/goods-hot-dress4.png" alt="mimosa dress">
+                    </a>
+                    <div class="goods-item-inform">
+                        <p class="goods-item-name">HOT SHORTS</p>
+                        <p class="goods-item-price">$35.95</p>
+                        <button class="hot-price-goods-add-cart">
+                            <span>add to cart</span>
+                            <i class="fa fa-plus"></i>
+                        </button>
+                    </div>
+                    <a class="shop-it">
+                        <img src="img/tablet/shop-icon.png" alt="shop it">
+                        <span>Shop it</span>
+                    </a>
+                </figure>
             </div>
         </div>
         <button class="lead-more">load more</button>
@@ -240,7 +277,7 @@
         </div>
     </aside>
     <aside class="goods-wrapper">
-        <div class="goods-items-wrapper">
+        <div class="goods-items-mobile">
             <figure class="goods-item">
                 <a href="#">
                     <img src="img/main/atmos.png" alt="Atmos & Here Shopper">
@@ -268,11 +305,193 @@
                 </div>
             </figure>
         </div>
+        <div class="goods-items-tablet">
+            <div class="goods-items">
+                <figure class="goods-item">
+                    <a href="#">
+                        <img src="img/tablet/goods-dress1.png" alt="dress 1">
+                    </a>
+                    <div class="goods-item-inform">
+                        <p class="goods-item-name">NADIA DRESS</p>
+                        <p class="goods-item-price">$64.95</p>
+                        <button class="goods-item-add-cart">
+                            <span>add to cart</span>
+                            <i class="fa fa-plus"></i>
+                        </button>
+                    </div>
+                    <a class="shop-it">
+                        <img src="img/tablet/shop-icon.png" alt="shop it">
+                        <span>Shop it</span>
+                    </a>
+                </figure>
+            </div>
+            <div class="goods-items">
+                <figure class="goods-item sale">
+                    <a href="#">
+                        <img src="img/tablet/goods-dress2.png" alt="dress 2">
+                    </a>
+                    <div class="goods-item-inform">
+                        <p class="goods-item-name">SOFI BLOUSE</p>
+                        <p class="goods-item-price">$26.95</p>
+                        <button class="hot-price-goods-add-cart">
+                            <span>add to cart</span>
+                            <i class="fa fa-plus"></i>
+                        </button>
+                    </div>
+                    <a class="shop-it">
+                        <img src="img/tablet/shop-icon.png" alt="shop it">
+                        <span>Shop it</span>
+                    </a>
+                </figure>
+            </div>
+            <div class="goods-items">
+                <figure class="goods-item">
+                    <a href="#">
+                        <img src="img/tablet/goods-dress3.png" alt="dress 3">
+                    </a>
+                    <div class="goods-item-inform">
+                        <p class="goods-item-name">GOODING SHORTS</p>
+                        <p class="goods-item-price">$79.95</p>
+                        <button class="hot-price-goods-add-cart">
+                            <span>add to cart</span>
+                            <i class="fa fa-plus"></i>
+                        </button>
+                    </div>
+                    <a class="shop-it">
+                        <img src="img/tablet/shop-icon.png" alt="shop it">
+                        <span>Shop it</span>
+                    </a>
+                </figure>
+            </div>
+        </div>
         <button class="lead-more">load more</button>
     </aside>
+    <div class="inform-wrapper">
+        <aside class="favourite-brands">
+            <h5 class="clip">favourite brands</h5>
+            <ul>
+                <li><a href="#"><img src="img/brands/addict.png" alt="addict"></a></li>
+                <li><a href="#"><img src="img/brands/shif.png" alt="shif"></a></li>
+                <li><a href="#"><img src="img/brands/adidas.png" alt="adidas"></a></li>
+                <li><a href="#"><img src="img/brands/boy.png" alt="boy"></a></li>
+                <li><a href="#"><img src="img/brands/converse.png" alt="converse"></a></li>
+                <li><a href="#"><img src="img/brands/klein.png" alt="klein"></a></li>
+                <li><a href="#"><img src="img/brands/edwin.png" alt="edwin"></a></li>
+                <li><a href="#"><img src="img/brands/grenson.png" alt="grenson"></a></li>
+            </ul>
+        </aside>
+        <aside class="inform-content">
+            <h3 class="clip">About LookShop</h3>
+            <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean
+                sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.
+                Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec
+                tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit.
+                Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in
+                erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. </p>
+        </aside>
+        <aside class="credit-card">
+            <p class="clip">We accept</p>
+            <ul>
+                <li><a href="#"><img src="img/credit-card/card1.png" alt="card"></a></li>
+                <li><a href="#"><img src="img/credit-card/card2.png" alt="card"></a></li>
+                <li><a href="#"><img src="img/credit-card/card3.png" alt="card"></a></li>
+                <li><a href="#"><img src="img/credit-card/card4.png" alt="card"></a></li>
+                <li><a href="#"><img src="img/credit-card/card5.png" alt="card"></a></li>
+                <li><a href="#"><img src=" img/credit-card/card6.png" alt="card"></a></li>
+                <li><a href="#"><img src="img/credit-card/card7.png" alt="card"></a></li>
+                <li><a href="#"><img src="img/credit-card/card8.png" alt="card"></a></li>
+                <li><a href="#"><img src="img/credit-card/card9.png" alt="card"></a></li>
+                <li><a href="#"><img src="img/credit-card/card10.png" alt="card"></a></li>
+                <li><a href="#"><img src="img/credit-card/card11.png" alt="card"></a></li>
+            </ul>
+        </aside>
+        <aside class="links-wrapper">
+            <div class="links-container">
+                <div class="links-block">
+                    <h6>Customer Service</h6>
+                    <ul>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Terms of payment</a></li>
+                        <li><a href="#">Terms of sale</a></li>
+                        <li><a href="#">Delivery terms and conditions</a></li>
+                        <li><a href="#">Return and Refunds</a></li>
+                    </ul>
+                </div>
+                <div class="links-block">
+                    <h6>Information</h6>
+                    <ul>
+                        <li><a href="#">Affiliate</a></li>
+                        <li><a href="#">Cookies</a></li>
+                        <li><a href="#">How to Shop</a></li>
+                        <li><a href="#">About Nelly</a></li>
+                        <li><a href="#">Investor relations</a></li>
+                    </ul>
+                </div>
+                <div class="links-block">
+                    <h6>Campaigns</h6>
+                    <ul>
+                        <li><a href="#">Evening dresses</a></li>
+                        <li><a href="#">Makeup</a></li>
+                        <li><a href="#">Fashion forward</a></li>
+                        <li><a href="#">training clothes</a></li>
+                        <li><a href="#">Special Occasion Dresses</a></li>
+                    </ul>
+                </div>
+                <div class="links-block">
+                    <h6>Stores</h6>
+                    <ul>
+                        <li><a href="#">Paris</a></li>
+                        <li><a href="#">New York</a></li>
+                        <li><a href="#">London</a></li>
+                        <li><a href="#">Madrid</a></li>
+                        <li><a href="#">Tokio</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="social-container">
+                <div class="links-block links-block-icons">
+                    <h6>Stores</h6>
+                    <ul>
+                        <li><a href="#">
+                            <i class="fa fa-twitter"></i>
+                        </a></li>
+                        <li><a href="#">
+                            <i class="fa fa-pinterest"></i>
+                        </a></li>
+                        <li><a href="#">
+                            <i class="fa fa-facebook"></i>
+                        </a></li>
+                        <li><a href="#">
+                            <i class="fa fa-google-plus"></i>
+                        </a></li>
+                        <li><a href="#">
+                            <i class="fa fa-tumblr"></i>
+                        </a></li>
+                        <li><a href="#">
+                            <i class="fa fa-vimeo"></i>
+                        </a></li>
+                    </ul>
+                </div>
+
+                <div class="links-block">
+                    <a href="#">
+                        <img src="img/tablet/secured.png" alt="secured">
+                    </a>
+                </div>
+            </div>
+        </aside>
+    </div>
     <footer class="main-footer">
         <nav class="footer-menu">
             <button></button>
+            <ul>
+                <li><a href="#">Privacy & Cookies</a></li>
+                <li><a href="#">Terms & Conditions</a></li>
+                <li><a href="#">Accessibility</a></li>
+                <li><a href="#">Store Directory</a></li>
+                <li><a href="#">About Us</a></li>
+            </ul>
         </nav>
         <small>
             <span>&#169 LookShop.com</span>

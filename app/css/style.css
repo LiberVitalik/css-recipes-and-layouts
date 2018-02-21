@@ -4,8 +4,16 @@ html {
 
 /*---Main header---*/
 
-.main-header {
+.flex-wrap {
+    width: auto;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 
+.main-header .flex-wrap {
+    flex-direction: column;
 }
 
 /*---Support block---*/
@@ -46,6 +54,7 @@ html {
 }
 
 .main-header .currency-wrapper {
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -117,6 +126,11 @@ html {
 }
 
 /*---Logo---*/
+
+.logo-container .flex-wrap {
+    width: 100%;
+    display: block;
+}
 
 .logo-wrap {
     height: 165px;
@@ -429,6 +443,32 @@ html {
     margin: 30px 15px 0 0;
     position: relative;
     background: #fff;
+    overflow: hidden;
+}
+
+.sale:before {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-bottom: 50px solid #fff;
+    border-left: 50px solid #4c4c4c;
+}
+
+.sale:after {
+    content: 'sale';
+    max-width: 30px;
+    overflow: hidden;
+    text-transform: uppercase;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    font-family: HelveticaRegular, Arial, sans-serif;
+    font-size: 0.62rem;
+    color: #fff;
 }
 
 .goods-item-inform {
@@ -462,6 +502,14 @@ html {
 .goods-item-price {
     font-size: 1.7rem;
     margin-bottom: 15px;
+}
+
+.slider .left-column button {
+    display: flex;
+}
+
+.slider .left-column button p {
+    max-width: 200px;
 }
 
 .goods-item-inform button,
@@ -631,4 +679,14 @@ html {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+}
+
+/*INFORM-WRAPPER*/
+
+.inform-wrapper {
+    display: none;
+}
+
+.footer-menu ul {
+    display: none;
 }
