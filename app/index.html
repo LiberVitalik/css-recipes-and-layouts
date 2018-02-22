@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/mobile.css">
     <link rel="stylesheet" href="css/tablet.css">
+    <link rel="stylesheet" href="css/desktop.css">
 </head>
 <body>
     <header class="main-header">
@@ -42,48 +43,34 @@
             <aside class="logo-wrap">
                 <a href="#" class="logo"></a>
             </aside>
-            <div class="tablet-menu-container">
-                <select name="card" id="your-card">
-                    <option value="your-cart">Your cart</option>
-                </select>
-                <aside class="main-price-wrapper">
-                    <div class="handbag"></div>
-                    <div class="main-price-items">
-                        <div class="main-price-items-count">
-                            <span>0</span>
-                            <p class="clip">items</p>
+            <div class="wrap">
+                <ul class="main-menu">
+                    <li><a href="#">new</a></li>
+                    <li><a href="#">designers</a></li>
+                    <li><a href="#">women</a></li>
+                    <li><a href="#">men</a></li>
+                    <li><a href="#">clearence</a></li>
+                </ul>
+                <div class="tablet-menu-container">
+                    <select name="card" id="your-card">
+                        <option value="your-cart">Your cart</option>
+                    </select>
+                    <aside class="main-price-wrapper">
+                        <div class="handbag"></div>
+                        <div class="main-price-items">
+                            <div class="main-price-items-count">
+                                <span>0</span>
+                                <p class="clip">items</p>
+                            </div>
+                            <div class="main-price-sum">
+                                <span>$</span>
+                                <span>0</span>
+                            </div>
                         </div>
-                        <div class="main-price-sum">
-                            <span>$</span>
-                            <span>0</span>
-                        </div>
-                    </div>
-                </aside>
+                    </aside>
+                </div>
             </div>
         </div>
-
-        <!--<aside class="logo-wrap">
-            <a href="#" class="logo"></a>
-        </aside>
-        <div class="tablet-menu-container">
-            <select name="card" id="your-card">
-                <option value="your-cart">Your cart</option>
-            </select>
-            <aside class="main-price-wrapper">
-                <div class="handbag"></div>
-                <div class="main-price-items">
-                    <div class="main-price-items-count">
-                        <span>0</span>
-                        <p class="clip">items</p>
-                    </div>
-                    <div class="main-price-sum">
-                        <span>$</span>
-                        <span>0</span>
-                    </div>
-                </div>
-            </aside>
-        </div>-->
-
     </aside>
     <nav class="menu">
         <p class="clip">menu</p>
@@ -115,61 +102,88 @@
         </ul>
     </aside>
     <div class="communications-wrapper">
-        <aside class="user-mail">
-            <p class="clip">Stay updated</p>
-            <form action="GET">
-                <input type="email" placeholder="Your email address">
-                <label for="submit-user-mail">
-                    <input type="submit" id="submit-user-mail" value="">
-                </label>
-            </form>
-        </aside>
-        <aside class="social">
-            <p class="clip">Find us here</p>
-            <div class="social-icons">
-                <a href="#">
-                    <i class="fa fa-facebook"></i>
-                </a>
-                <a href="#">
-                    <i class="fa fa-twitter"></i>
-                </a>
-                <a href="#">
-                    <i class="fa fa-pinterest"></i>
-                </a>
-            </div>
-        </aside>
+        <div class="flex-wrap">
+            <aside class="user-mail">
+                <p class="clip">Stay updated</p>
+                <form action="GET">
+                    <input type="email" placeholder="Your email address">
+                    <label for="submit-user-mail">
+                        <input type="submit" id="submit-user-mail" value="">
+                    </label>
+                </form>
+            </aside>
+            <aside class="social">
+                <p class="clip">Find us here</p>
+                <div class="social-icons">
+                    <a href="#">
+                        <i class="fa fa-facebook"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa fa-twitter"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa fa-pinterest"></i>
+                    </a>
+                </div>
+            </aside>
+        </div>
     </div>
     <aside class="advertising">
-        <a href="#">
-            <img src="img/tablet/news1.png" alt="news1">
-        </a>
-        <div>
+        <article class="main-news">
             <a href="#">
-                <img src="img/tablet/news2.png" alt="news2">
+                <div class="main-news-inform">
+                    <p>best</p>
+                    <p>outfits</p>
+                    <div class="main-news-inform-middle">
+                        <small>&</small>
+                    </div>
+                    <p>looks</p>
+                </div>
             </a>
-            <div>
+        </article>
+        <section class="middle-news-container">
+            <article class="middle-news">
                 <a href="#">
-                    <img src="img/tablet/news3.png" alt="news3">
+                    <figure>
+                        <img src="img/tablet/news2.png" alt="news2">
+                    </figure>
                 </a>
-                <a href="#">
-                    <img src="img/tablet/news4.png" alt="news4">
-                </a>
-            </div>
-        </div>
+            </article>
+            <section class="small-news-container">
+                <article class="small-news1">
+                    <a href="#">
+                        <p>best sellers</p>
+                    </a>
+                </article>
+                <article class="small-news2">
+                    <a href="#">
+                        <div>
+                            <p>fall leather</p>
+                            <button>
+                                shop now
+                                <i class="fa fa-caret-right"></i>
+                            </button>
+                        </div>
+                    </a>
+                </article>
+            </section>
+        </section>
     </aside>
     <aside class="goods-wrapper hot-menu-bg">
         <div class="goods-hot">
-            <ul>
-                <li>What's hot?</li>
-                <li>designers</li>
-                <li>featured</li>
-                <li>latest</li>
-            </ul>
-            <div class="goods-hot-control">
-                <button></button>
-                <button></button>
+            <div class="flex-wrap">
+                <ul>
+                    <li>What's hot?</li>
+                    <li>designers</li>
+                    <li>featured</li>
+                    <li>latest</li>
+                </ul>
+                <div class="goods-hot-control">
+                    <button></button>
+                    <button></button>
+                </div>
+                <i class="fa fa-caret-down"></i>
             </div>
-            <i class="fa fa-caret-down"></i>
         </div>
         <div class="goods-items-mobile">
             <div class="goods-items">

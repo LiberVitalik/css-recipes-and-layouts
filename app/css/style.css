@@ -6,6 +6,7 @@ html {
 
 .flex-wrap {
     width: auto;
+    height: 100%;
     margin: 0 auto;
     display: flex;
     align-items: center;
@@ -132,6 +133,10 @@ html {
     display: block;
 }
 
+.logo-container .main-menu {
+    display: none;
+}
+
 .logo-wrap {
     height: 165px;
     display: flex;
@@ -252,6 +257,10 @@ html {
     border: none;
     cursor: pointer;
     background: url("../img/main/bars.png") no-repeat 50% 50%;
+}
+
+.communications-wrapper .flex-wrap {
+    flex-direction: column;
 }
 
 .user-mail {
@@ -385,6 +394,10 @@ html {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.goods-hot .flex-wrap {
+    width: 100%;
 }
 
 .goods-wrapper {

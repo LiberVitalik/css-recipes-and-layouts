@@ -6,6 +6,11 @@ src: url("../fonts/HelveticaNeueLTStd_Lt.otf") format("opentype");
 }
 
 @font-face {
+    font-family: "HelveticaBold";
+    src: url("../fonts/HelveticaNeueLTStd_Bold.ttf") format("truetype");
+}
+
+@font-face {
     font-family: "EmpirialRegular";
     src: url("../fonts/Empirial.ttf") format("truetype");
     font-style: normal;
