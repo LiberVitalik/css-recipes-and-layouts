@@ -17,7 +17,8 @@
     .logo-container .flex-wrap,
     .communications-wrapper .flex-wrap,
     .goods-hot .flex-wrap,
-    .main-footer .flex-wrap {
+    .main-footer .flex-wrap,
+    .favourite-brands ul {
         width: 970px;
     }
 
@@ -130,5 +131,9 @@
 
     .links-block {
         margin-right: 40px;
+    }
+
+    .favourite-brands ul li {
+        margin: 0;
     }
 }

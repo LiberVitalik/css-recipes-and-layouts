@@ -451,7 +451,6 @@ html {
 .goods-item {
     width: 275px;
     height: 542px;
-    //margin: 30px 15px 30px 30px;
     position: relative;
     background: #fff;
     overflow: hidden;
@@ -503,10 +502,6 @@ html {
 .goods-item-inform p {
     color: #373737;
     font-family: Arial, sans-serif;
-}
-
-.goods-items-wrapper .goods-item-add-cart {
-    //margin-bottom: 15px;
 }
 
 .goods-item-name {

@@ -584,6 +584,7 @@
     /*GOODS-ITEMS*/
 
     .goods-items-wrapper {
+        height: 455px;
         margin-left: -515px;
     }
 
