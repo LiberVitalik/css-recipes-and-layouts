@@ -1,3 +1,11 @@
+@media screen and (min-width: 980px) {
+    .clearance {
+        width: 970px;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+}
+
 @media screen and (min-width: 1199px) {
     .flex-wrap {
         width: 970px;
@@ -106,5 +114,10 @@
 
     .advertising .small-news2 a div {
         left: 15px;
+    }
+
+    .inform-content {
+        width: 970px;
+        margin: 0 auto;
     }
 }
