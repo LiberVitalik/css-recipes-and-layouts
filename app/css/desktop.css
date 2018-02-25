@@ -16,7 +16,8 @@
 
     .logo-container .flex-wrap,
     .communications-wrapper .flex-wrap,
-    .goods-hot .flex-wrap {
+    .goods-hot .flex-wrap,
+    .main-footer .flex-wrap {
         width: 970px;
     }
 
@@ -119,5 +120,15 @@
     .inform-content {
         width: 970px;
         margin: 0 auto;
+    }
+
+    .links-wrapper .links-container,
+    .links-wrapper .social-container,
+    .links-block {
+        width: auto;
+    }
+
+    .links-block {
+        margin-right: 40px;
     }
 }
